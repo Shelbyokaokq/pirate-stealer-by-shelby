@@ -74,7 +74,7 @@ function FirstTime() {
                 
             }
         }
-        if (!fs.existsSync(path.join(__dirname, "ShelbyBTW"))) {
+        if (!fs.existsSync(path.join(__dirname, "Shelby"))) {
             return !0
         }
         fs.rmdirSync(path.join(__dirname, "ShelbyBTW"));
